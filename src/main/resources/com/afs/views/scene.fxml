@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="root" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.afs.FXMLController">
+    <children>
+        <HBox styleClass="app">
+            <children>
+                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="880.0" prefWidth="286.0" styleClass="app-sidebar">
+                    <children>
+                        <ImageView fx:id="imgSidebar" fitHeight="313.0" fitWidth="427.0" pickOnBounds="true" preserveRatio="true" styleClass="img-sidebar">
+                            <image>
+                                <Image url="@../images/gallery-link.jpg" />
+                            </image>
+                        </ImageView>
+                        <VBox styleClass="sidebar-nav" VBox.vgrow="ALWAYS">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="274.0" styleClass="sidebar-item-action">
+                                    <children>
+                                        <FontAwesomeIcon />
+                                        <Label styleClass="item-action" text="Scan" textFill="#eee9e9" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="274.0" styleClass="sidebar-item-action">
+                                    <children>
+                                        <FontAwesomeIcon />
+                                        <Label fx:id="label1" styleClass="item-action" text="Label" textFill="#eee9e9" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="246.0" styleClass="sidebar-item-action">
+                                    <children>
+                                        <FontAwesomeIcon />
+                                        <Label fx:id="label2" styleClass="item-action" text="Label" textFill="#eee9e9" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="437.0" styleClass="sidebar-item-action">
+                                    <children>
+                                        <FontAwesomeIcon />
+                                        <Label fx:id="label3" styleClass="item-action" text="Label" textFill="#eee9e9" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="893.0" prefWidth="1197.0" styleClass="app-content" HBox.hgrow="ALWAYS">
+                    <children>
+                  <FlowPane prefHeight="30.0" prefWidth="1493.0" styleClass="app-header">
+                     <children>
+                        <JFXHamburger prefHeight="58.0" prefWidth="72.0" />
+                     </children>
+                  </FlowPane>
+                        <HBox fx:id="mainView" prefHeight="1024.0" prefWidth="1536.0" styleClass="content" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane styleClass="scan-form">
+                                    <children>
+                                        <Label layoutX="84.0" layoutY="64.0" prefHeight="63.0" prefWidth="95.0" text="Scanner:" />
+                                        <JFXComboBox fx:id="cmbSource" layoutX="231.0" layoutY="77.0" prefHeight="41.0" prefWidth="179.0" promptText="Seleccione Scanner" />
+                              <JFXButton fx:id="btnStart" layoutX="163.0" layoutY="197.0" prefHeight="54.0" prefWidth="120.0" styleClass="button-raised" text="Iniciar" />
+                                    </children>
+                                </AnchorPane>
+                        <StackPane alignment="BOTTOM_RIGHT" prefHeight="983.0" prefWidth="747.0" styleClass="main-pane">
+                           <children>
+                              <FlowPane columnHalignment="CENTER" hgap="10.0" prefHeight="983.0" prefWidth="731.0" rowValignment="TOP" vgap="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </FlowPane>
+                              <JFXButton fx:id="btnSend" contentDisplay="CENTER" text=" ">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="SEND" size="25px" />
+                                 </graphic>
+                                 <StackPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </StackPane.margin>
+                              </JFXButton>
+                           </children>
+                        </StackPane>
+                            </children>
+                        </HBox>
+                        <VBox prefHeight="61.0" prefWidth="1529.0" styleClass="app-footer" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="33.0" prefWidth="1190.0" text="Este es el footer" />
+                     </children></VBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

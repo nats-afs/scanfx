@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'de.jensd:fontawesomefx:8.1' // icons
+    compile 'com.jfoenix:jfoenix:9.0.8' //material design components
+}
+
+javafx {
+    version = "13"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics']
+}
+
+mainClassName = 'com.afs.MainApp'
