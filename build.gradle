@@ -15,7 +15,8 @@ dependencies {
 
 javafx {
     version = "13"
-    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics']
+    modules = ['javafx.controls', 'javafx.fxml']
 }
 
-mainClassName = 'com.afs.MainApp'
+//mainClassName = 'com.afs.MainApp'
+mainClassName = 'com.afs.Main'

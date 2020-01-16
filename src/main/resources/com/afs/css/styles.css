@@ -20,62 +20,31 @@
     -fx-min-height: inherit;
     -fx-pref-width: 1920px;
     -fx-pref-height: 1080px; }
-    .root .app .app-sidebar {
-      -fx-fill-width: true;
-      -fx-pref-width: 384px; }
-      .root .app .app-sidebar .img-sidebar {
-        -fx-image: url("images/gallery-link.jpg"); }
-      .root .app .app-sidebar .sidebar-nav {
-        -fx-background-color: #141726; }
-        .root .app .app-sidebar .sidebar-nav .sidebar-item-action {
-          -fx-padding: 5px 10px;
-          -fx-font-size: 12pt;
-          -fx-spacing: 9px; }
-          .root .app .app-sidebar .sidebar-nav .sidebar-item-action > * {
-            -fx-text-fill: #2A8C70;
-            -fx-fill: #2A8C70; }
-    .root .app .app-content {
-      -fx-background-color: white;
-      -fx-pref-width: 1536px; }
-      .root .app .app-content .app-header {
-        -fx-background-color: #141726; }
-        .root .app .app-content .app-header .jfx-hamburger-icon StackPane {
-          -fx-background-color: #2A8C70; }
-      .root .app .app-content .content {
-        -fx-pref-width: 1536px; }
-        .root .app .app-content .content .scan-form {
-          -fx-pref-width: 768px; }
-        .root .app .app-content .content .scan-result {
-          -fx-hgap: 10px;
-          -fx-vgap: 10px;
-          -fx-alignment: top-left;
-          -fx-pref-width: 768px;
-          -fx-background-color: #2A8C70; }
-          .root .app .app-content .content .scan-result .jfx-button {
-            -fx-background-color: #141726;
-            -fx-background-radius: 50px; }
-            .root .app .app-content .content .scan-result .jfx-button > * {
-              -fx-fill: WHITE; }
-        .root .app .app-content .content .label {
-          -fx-text-fill: #2A8C70;
-          -fx-font-size: 14pt; }
-        .root .app .app-content .content .jfx-combo-box {
-          -jfx-focus-color: #2A8C70;
-          -jfx-unfocus-color: #2A8C70;
-          -fx-prompt-text-fill: #2A8C70;
-          -jfx-label-float: true;
-          -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT; }
-          .root .app .app-content .content .jfx-combo-box .list-cell:hover {
-            -fx-background-color: #34BF98; }
-          .root .app .app-content .content .jfx-combo-box .arrow-button .arrow {
-            -fx-background-color: #2A8C70; }
-        .root .app .app-content .content .button-raised {
-          -fx-padding: 0.7em 0.57em;
-          -fx-font-size: 14px;
-          -jfx-button-type: RAISED;
-          -fx-background-color: #2A8C70;
-          -fx-pref-width: 200;
-          -fx-text-fill: WHITE; }
+
+.app-sidebar {
+  -fx-fill-width: true;
+  -fx-pref-width: 384px;
+  -fx-background-color: #141726; }
+  .app-sidebar .sidebar-item-action {
+    -fx-padding: 5px 10px;
+    -fx-font-size: 12pt;
+    -fx-spacing: 9px; }
+    .app-sidebar .sidebar-item-action > * {
+      -fx-text-fill: #2A8C70;
+      -fx-fill: #2A8C70; }
+
+.app-content {
+  -fx-background-color: white;
+  -fx-pref-width: 1536px; }
+  .app-content .content {
+    -fx-pref-width: 1536px; }
+
+.app-header {
+  -fx-background-color: #141726; }
+  .app-header .btn-toogle {
+    -fx-cursor: hand; }
+    .app-header .btn-toogle StackPane {
+      -fx-background-color: #2A8C70; }
 
 .app-footer {
   -fx-background-color: #4E2559;
@@ -87,14 +56,42 @@
 .action-icon {
   -fx-border-radius: 50px; }
 
-.jfx-hamburger-icon {
-  -fx-spacing: 5;
-  -fx-cursor: hand; }
+.scan-form {
+  -fx-pref-width: 768px; }
 
-.jfx-hamburger-icon StackPane {
-  -fx-pref-width: 40px;
-  -fx-pref-height: 7px;
-  -fx-background-color: #D63333;
-  -fx-background-radius: 5px; }
+.scan-result {
+  -fx-hgap: 10px;
+  -fx-vgap: 10px;
+  -fx-alignment: top-left;
+  -fx-pref-width: 768px;
+  -fx-background-color: #2A8C70; }
+  .scan-result .jfx-button {
+    -fx-background-color: #141726;
+    -fx-background-radius: 50px; }
+    .scan-result .jfx-button > * {
+      -fx-fill: WHITE; }
+
+.label {
+  -fx-text-fill: #2A8C70;
+  -fx-font-size: 14pt; }
+
+.jfx-combo-box {
+  -jfx-focus-color: #2A8C70;
+  -jfx-unfocus-color: #2A8C70;
+  -fx-prompt-text-fill: #2A8C70;
+  -jfx-label-float: true;
+  -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT; }
+  .jfx-combo-box .list-cell:hover {
+    -fx-background-color: #34BF98; }
+  .jfx-combo-box .arrow-button .arrow {
+    -fx-background-color: #2A8C70; }
+
+.button-raised {
+  -fx-padding: 0.7em 0.57em;
+  -fx-font-size: 14px;
+  -jfx-button-type: RAISED;
+  -fx-background-color: #2A8C70;
+  -fx-pref-width: 200;
+  -fx-text-fill: WHITE; }
 
 /*# sourceMappingURL=styles.css.map */

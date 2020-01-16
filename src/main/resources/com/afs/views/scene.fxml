@@ -6,6 +6,7 @@
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -57,13 +58,16 @@
                 </VBox>
                 <VBox prefHeight="893.0" prefWidth="1197.0" styleClass="app-content" HBox.hgrow="ALWAYS">
                     <children>
-                  <FlowPane prefHeight="30.0" prefWidth="1493.0" styleClass="app-header">
+                  <FlowPane hgap="15.0" prefHeight="35.0" prefWidth="1493.0" styleClass="app-header">
                      <children>
-                        <JFXHamburger prefHeight="58.0" prefWidth="72.0" />
+                        <JFXHamburger prefHeight="52.0" prefWidth="42.0" spacing="5.0" styleClass="btn-toogle">
+                           <FlowPane.margin>
+                              <Insets left="15.0" />
+                           </FlowPane.margin></JFXHamburger>
                      </children>
                   </FlowPane>
-                        <HBox fx:id="mainView" prefHeight="1024.0" prefWidth="1536.0" styleClass="content" VBox.vgrow="ALWAYS">
-                            <children>
+                  <SplitPane dividerPositions="0.5" styleClass="content" VBox.vgrow="ALWAYS">
+                     <items>
                                 <AnchorPane styleClass="scan-form">
                                     <children>
                                         <Label layoutX="84.0" layoutY="64.0" prefHeight="63.0" prefWidth="95.0" text="Scanner:" />
@@ -78,7 +82,7 @@
                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                  </padding>
                               </FlowPane>
-                              <JFXButton fx:id="btnSend" contentDisplay="CENTER" text=" ">
+                              <JFXButton fx:id="btnSend" contentDisplay="CENTER" style="-fx-cursor: hand;" text=" ">
                                  <graphic>
                                     <FontAwesomeIcon iconName="SEND" size="25px" />
                                  </graphic>
@@ -88,8 +92,8 @@
                               </JFXButton>
                            </children>
                         </StackPane>
-                            </children>
-                        </HBox>
+                     </items>
+                  </SplitPane>
                         <VBox prefHeight="61.0" prefWidth="1529.0" styleClass="app-footer" VBox.vgrow="ALWAYS">
                      <children>
                         <Label prefHeight="33.0" prefWidth="1190.0" text="Este es el footer" />

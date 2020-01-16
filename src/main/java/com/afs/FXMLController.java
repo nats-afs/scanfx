@@ -46,8 +46,6 @@ public class FXMLController implements Initializable {
     @FXML
     private JFXButton btnStart;
 
-    private ScanPreview scanResult;
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         initScanner();
@@ -60,14 +58,6 @@ public class FXMLController implements Initializable {
             List devices = manager.listDevices();
             cmbSource.setItems(FXCollections.observableArrayList(devices));
             cmbSource.getSelectionModel().selectFirst();
-
-//            scanResult = new HBox();
-//            scanResult.getChildren().addListener((ListChangeListener<Node>) c -> {
-//                if (scanResult.getChildren().size() > 0){
-//
-//                }
-//
-//            });
 
             btnStart.setOnAction(event -> {
                 System.out.println("init scan");

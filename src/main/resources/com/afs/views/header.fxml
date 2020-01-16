@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<FlowPane hgap="15.0" prefHeight="50.0" prefWidth="1493.0" styleClass="app-header" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXHamburger prefHeight="52.0" prefWidth="42.0" spacing="5.0" styleClass="btn-toogle">
+         <FlowPane.margin>
+            <Insets left="15.0" />
+         </FlowPane.margin>
+      </JFXHamburger>
+   </children>
+</FlowPane>

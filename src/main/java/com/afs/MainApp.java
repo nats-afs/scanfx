@@ -32,6 +32,7 @@ public class MainApp extends Application {
 
         stage.setTitle("JavaFX and Gradle");
         stage.setScene(scene);
+        stage.setFullScreen(true);
 
         stage.show();
     }
